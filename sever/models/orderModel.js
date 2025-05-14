@@ -4,10 +4,10 @@ const orderSchema = new mongoose.Schema({
     userId: { type: String, requied: true },
     items: { type: Array, requied: true },
     amount: { type: Number, requied: true },
-    adress: { type: Object, requied: true },
+    address: { type: Object, requied: true },
     status: { type: String, requied: true, default: 'Order Placed' },
     paymentMethod: { type: String, requied: true },
-    payment: { type: Boolean, default: false },
+    payment: { type: Boolean, requied: true, default: false },
     date: { type: Number, requied: true },
 });
 
