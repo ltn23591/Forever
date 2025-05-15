@@ -8,7 +8,7 @@ const LastedCollection = () => {
 
     useEffect(() => {
         setlastedProducts(products.slice(0, 10)); // Lấy 10 sản phẩm đầu tiên từ danh sách sản phẩm
-    }, []);
+    }, [products]);
     return (
         <div className="my-10">
             <div className="text-center py-8 text-3xl">
