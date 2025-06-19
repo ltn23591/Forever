@@ -7,6 +7,12 @@ import userRouter from './routes/userRoute.js';
 import productRouter from './routes/productRoute.js';
 import cartRouter from './routes/cartRoute.js';
 import orderRouter from './routes/orderRoute.js';
+import job from './config/cron.js';
+
+
+job.start()
+
+
 //App config
 const app = express();
 const port = process.env.PORT || 4000;
